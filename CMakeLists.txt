@@ -14,6 +14,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(CardGame
   main.cpp
+  Card.h Card.cpp
 )
 target_link_libraries(CardGame Qt${QT_VERSION_MAJOR}::Core)
 
