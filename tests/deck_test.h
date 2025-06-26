@@ -7,7 +7,9 @@ class DeckTest : public QObject {
     Q_OBJECT
 
 private slots:
-    void testSanity();
+    void testDeckGenerate();
+    void testShuffler();
+    void testDraw();
 };
 
 #endif // DECK_TEST_H
