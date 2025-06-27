@@ -41,11 +41,11 @@ class Card
     public:
         Card(Rank rank, Suit suit);
 
-        Rank getRank() const { return rank; }
-        Suit getSuit() const { return suit; }
-        int getValue() const;
+        Rank getRank(void) const { return rank; }
+        Suit getSuit(void) const { return suit; }
+        int getValue(void) const;
 
-        std::string toString() const;
+        std::string toString(void) const;
 
     private:
         Rank rank;

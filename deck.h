@@ -9,13 +9,13 @@
 class Deck
 {
     public:
-        Deck();
-        void shuffle();
-        void reset();
-        Card drawCard();
-        bool isEmpty();
-        std::string getDeckAsString();
-        int numRemainingCards();
+        Deck(void);
+        void shuffle(void);
+        void reset(void);
+        Card drawCard(void);
+        bool isEmpty(void);
+        std::string getDeckAsString(void);
+        int numRemainingCards(void);
 
     private:
         std::vector<Card> cards;

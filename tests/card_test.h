@@ -7,7 +7,7 @@ class CardTest : public QObject {
     Q_OBJECT
 
 private slots:
-    void testSimpleCard();
+    void testSimpleCard(void);
 };
 
 #endif // CARD_TEST_H

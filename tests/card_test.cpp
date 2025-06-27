@@ -2,7 +2,7 @@
 #include "../card.h"
 #include <QtTest>
 
-void CardTest::testSimpleCard(){
+void CardTest::testSimpleCard(void){
     Card card(Rank::Six, Suit::Diamonds);
     QVERIFY(card.getRank() == Rank::Six);
     QVERIFY(card.getSuit() == Suit::Diamonds);
