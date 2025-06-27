@@ -1,7 +1,7 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include "Card.h"
+#include "card.h"
 #include <vector>
 
 #define DECK_SIZE 52

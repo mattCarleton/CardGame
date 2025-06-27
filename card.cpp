@@ -1,7 +1,24 @@
-#include "Card.h"
+#include "card.h"
 using namespace std;
 
 Card::Card(Rank r, Suit s): rank(r), suit(s){}
+
+int Card::getValue() const
+{
+    switch(rank){
+    case Rank::Jack:
+    case Rank::Queen:
+    case Rank::King:
+        return 10;
+    case Rank::Ace:
+        return 11; // aces are handled as 1's if needed in player class
+    default:
+        return static_cast<int>(rank);
+    }
+
+    return 0;
+
+}
 
 std::string Card::toString() const {
     string out = "";

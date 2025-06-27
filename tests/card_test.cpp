@@ -1,5 +1,5 @@
 #include "card_test.h"
-#include "../Card.h"
+#include "../card.h"
 #include <QtTest>
 
 void CardTest::testSimpleCard(){

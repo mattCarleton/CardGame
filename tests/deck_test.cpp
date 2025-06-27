@@ -1,6 +1,6 @@
 #include "deck_test.h"
 #include <QtTest>
-#include "../Deck.h"
+#include "../deck.h"
 
 void DeckTest::testDeckGenerate(){
     Deck deck;

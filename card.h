@@ -4,14 +4,14 @@
 
 enum class Rank {
     Two = 2,
-    Three,
-    Four,
-    Five,
-    Six,
-    Seven,
-    Eight,
-    Nine,
-    Ten,
+    Three, //3
+    Four, //4
+    Five, //5
+    Six, //6
+    Seven, //7
+    Eight, //8
+    Nine, //9
+    Ten, //10
     Jack,
     Queen,
     King,
@@ -43,6 +43,7 @@ class Card
 
         Rank getRank() const { return rank; }
         Suit getSuit() const { return suit; }
+        int getValue() const;
 
         std::string toString() const;
 
