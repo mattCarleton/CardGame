@@ -3,6 +3,7 @@ using namespace std;
 
 Card::Card(Rank r, Suit s): rank(r), suit(s){}
 
+// Convert card rank into an int for calculating score
 int Card::getValue() const
 {
     switch(rank){
@@ -11,7 +12,7 @@ int Card::getValue() const
     case Rank::King:
         return 10;
     case Rank::Ace:
-        return 11; // aces are handled as 1's if needed in player class
+        return 11; // aces are handled as 1's if needed inside player class
     default:
         return static_cast<int>(rank);
     }
@@ -20,6 +21,7 @@ int Card::getValue() const
 
 }
 
+// For printing cards to console as string format
 std::string Card::toString() const {
     string out = "";
 

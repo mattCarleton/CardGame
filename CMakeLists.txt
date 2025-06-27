@@ -19,7 +19,7 @@ add_executable(CardGame
   deck.h deck.cpp
   player.h player.cpp
   dealer.h dealer.cpp
-  playCardGame.h playCardGame.cpp
+  card_game.h card_game.cpp
 )
 target_link_libraries(CardGame Qt${QT_VERSION_MAJOR}::Core)
 
@@ -29,6 +29,7 @@ add_executable(all_tests
     tests/card_test.h tests/card_test.cpp
     tests/deck_test.h tests/deck_test.cpp
     tests/player_test.h tests/player_test.cpp
+    tests/dealer_test.h tests/dealer_test.cpp
     card.cpp
     deck.cpp
     player.cpp
